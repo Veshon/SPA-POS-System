@@ -269,11 +269,10 @@
 
         })
 
-
     }
 
 
-        $("#orderSave").on('click',() => {
+    $("#orderSave").on('click',() => {
 
             var id = $('#orderId').val();
 
@@ -302,3 +301,26 @@
             $("#orderClear").click();
 
         })
+
+
+    $("#orderTBody").on('click', 'tr', function(){
+
+        let index = $(this).index();
+        records = index;
+
+        let id = $(this).find(".orderId-value").text();
+        let date = $(this).find(".orderDate-value").text();
+        let cusName = $(this).find(".orderCusName-value").text();
+        let itemCode = $(this).find(".orderItemName-value").text();
+
+        console.log("Values:"+id)
+        console.log("Values:"+date)
+        console.log("Values:"+cusName)
+        console.log("Values:"+itemCode)
+
+        $("#orderId").val(id);
+        $("#orderDate").val(date);
+        $("#orderCusName").val(cusName);
+        $("#orderItemCode").val(itemCode);
+
+    })
