@@ -344,7 +344,7 @@
         orderObj.$price = price
 
         loadAllOrders();
-        // $("#orderClear").click();
+        $("#orderClear").click();
 
     })
 
