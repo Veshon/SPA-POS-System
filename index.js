@@ -226,9 +226,9 @@
 
         let itemObj = {...items[recordIndex]}
         itemObj.$id = id
-        cusObj.$desc = desc
-        cusObj.$qty = qty
-        cusObj.$price = price
+        itemObj.$desc = desc
+        itemObj.$qty = qty
+        itemObj.$price = price
 
         loadCustomers();
         $("#cusReset").click();
@@ -322,5 +322,37 @@
         $("#orderDate").val(date);
         $("#orderCusName").val(cusName);
         $("#orderItemCode").val(itemCode);
+
+    })
+
+
+    $("#orderUpdate").on('click',() => {
+
+        var id = $('#orderId').val();
+
+        var date = $('#orderDate').val();
+
+        var cusName = $('#orderCusName').val();
+
+        var itemCode = $('#orderItemCode').val();
+
+
+        let orderObj = {...orders[recordIndex]}
+        orderObj.$id = id
+        orderObj.$desc = desc
+        orderObj.$qty = qty
+        orderObj.$price = price
+
+        loadAllOrders();
+        // $("#orderClear").click();
+
+    })
+
+    $("#orderDelete").on('click',() => {
+
+        orders.splice(recordIndex, 1);
+
+        loadAllOrders();
+        $("#orderClear").click();
 
     })
