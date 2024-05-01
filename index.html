@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="assets/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -55,10 +56,10 @@
                         <input type="text" class="form-control" id="cusLAddress">
                     </div>
 
-                    <button id="cusSubmit" type="button" class="btn btn-primary">Save</button>
+                    <button id="cusSubmit" type="button" class="btn btn-success">Save</button>
                     <button id="cusUpdate" type="button" class="btn btn-primary">Update</button>
-                    <button id="cusDelete" type="button" class="btn btn-primary">Delete</button>
-                    <button id="cusReset" type="reset" class="btn btn-primary">Clear</button>
+                    <button id="cusDelete" type="button" class="btn btn-danger">Delete</button>
+                    <button id="cusReset" type="reset" class="btn btn-warning">Clear</button>
                 </form>
 
             </div>
@@ -115,10 +116,10 @@
                         <input type="text" class="form-control" id="itemDescription">
                     </div>
 
-                    <button id="itemSave" type="button" class="btn btn-primary">Save</button>
+                    <button id="itemSave" type="button" class="btn btn-success">Save</button>
                     <button id="itemUpdate" type="button" class="btn btn-primary">Update</button>
-                    <button id="itemDelete" type="button" class="btn btn-primary">Delete</button>
-                    <button id="iteClear" type="reset" class="btn btn-primary">Clear</button>
+                    <button id="itemDelete" type="button" class="btn btn-danger">Delete</button>
+                    <button id="iteClear" type="reset" class="btn btn-warning">Clear</button>
                 </form>
 
             </div>
@@ -161,7 +162,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4 ">
+            <div class="col-lg-4">
 
                 <form>
                     <div class="mb-3">
@@ -178,16 +179,12 @@
                         <label for="orderCusId" class="form-label">Customer ID</label>
                         <input type="text" class="form-control" id="orderCusId">
                     </div>
-<!--
-                    <div class="mb-3">
-                        <label for="orderItemName" class="form-label">Item Name</label>
-                        <input type="text" class="form-control" id="orderItemName">
-                    </div>-->
 
-                    <button id="orderSave" type="button" class="btn btn-primary">Add to cart</button>
+
+                    <button id="orderSave" type="button" class="btn btn-success">Add to cart</button>
                     <button id="orderUpdate" type="button" class="btn btn-primary">Update</button>
-                    <button id="orderDelete" type="button" class="btn btn-primary">Delete</button>
-                    <button id="orderClear" type="reset" class="btn btn-primary">Clear</button>
+                    <button id="orderDelete" type="button" class="btn btn-danger">Delete</button>
+                    <button id="orderClear" type="reset" class="btn btn-warning">Clear</button>
                 </form>
 
             </div>
