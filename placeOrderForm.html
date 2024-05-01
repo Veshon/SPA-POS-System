@@ -10,89 +10,59 @@
 
 <section id="placeOrderSec">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link">Customer</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link">Item</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link">Place Order</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!--    <h1 style="position: absolute; left: 35%">Customer Manage Form</h1>-->
 
     <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-6 ">
+        <div class="row">
+            <div class="col-lg-6 ">
 
-            <form>
-                <div class="mb-3">
-                    <label for="orderId" class="form-label">Order ID</label>
-                    <input type="text" class="form-control" id="orderId">
-                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="orderId" class="form-label">Order ID</label>
+                        <input type="text" class="form-control" id="orderId">
+                    </div>
 
-                <div class="mb-3">
-                    <label for="orderDate" class="form-label">Date</label>
-                    <input type="text" class="form-control" id="orderDate">
-                </div>
+                    <div class="mb-3">
+                        <label for="orderDate" class="form-label">Date</label>
+                        <input type="text" class="form-control" id="orderDate">
+                    </div>
 
-                <button type="button" class="btn btn-primary">Submit</button>
-                <button type="button" class="btn btn-primary">Update</button>
-                <button type="button" class="btn btn-primary">Delete</button>
-                <button type="reset" class="btn btn-primary">Clear</button>
-            </form>
+                    <button id="orderSave" type="button" class="btn btn-primary">Save</button>
+                    <button id="orderUpdate" type="button" class="btn btn-primary">Update</button>
+                    <button id="orderDelete" type="button" class="btn btn-primary">Delete</button>
+                    <button id="orderClear" type="reset" class="btn btn-primary">Clear</button>
+                </form>
 
-        </div>
-
-        <div class="col-lg-6 ">
-
-            <div class="mb-3">
-                <label for="custName" class="form-label">Customer Name</label>
-                <input type="text" class="form-control" id="custName">
-            </div>
-            <div class="mb-3">
-                <label for="itemCode" class="form-label">Item Code</label>
-                <input type="text" class="form-control" id="itemCode">
             </div>
 
+            <div class="col-lg-6 ">
+
+                <div class="mb-3">
+                    <label for="orderCusName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="orderCusName">
+                </div>
+                <div class="mb-3">
+                    <label for="orderItemCode" class="form-label">Item Code</label>
+                    <input type="text" class="form-control" id="orderItemCode">
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
 
-<table style="position: absolute; top: 350px" class="table">
-    <thead>
-    <tr>
-        <th scope="col">Order ID</th>
-        <th scope="col">Date</th>
-        <th scope="col">Customer Name</th>
-        <th scope="col">Item Code</th>
-    </tr>
-    </thead>
-    <tbody>
+    <table style="position: absolute; top: 350px" class="table">
+        <thead>
+        <tr>
+            <th scope="col">Order ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Cus Name</th>
+            <th scope="col">Item Code</th>
+        </tr>
+        </thead>
+        <tbody id="orderTBody">
 
-    <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-    </tr>
-
-    </tbody>
-</table>
+        </tbody>
+    </table>
 
 </section>
 

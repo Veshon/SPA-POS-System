@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -32,6 +33,7 @@
         </div>
     </div>
 </nav>
+
 
 <section id="customerSec">
 
@@ -159,7 +161,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 ">
+            <div class="col-lg-4 ">
 
                 <form>
                     <div class="mb-3">
@@ -172,7 +174,17 @@
                         <input type="text" class="form-control" id="orderDate">
                     </div>
 
-                    <button id="orderSave" type="button" class="btn btn-primary">Save</button>
+                    <div class="mb-3">
+                        <label for="orderCusId" class="form-label">Customer ID</label>
+                        <input type="text" class="form-control" id="orderCusId">
+                    </div>
+<!--
+                    <div class="mb-3">
+                        <label for="orderItemName" class="form-label">Item Name</label>
+                        <input type="text" class="form-control" id="orderItemName">
+                    </div>-->
+
+                    <button id="orderSave" type="button" class="btn btn-primary">Add to cart</button>
                     <button id="orderUpdate" type="button" class="btn btn-primary">Update</button>
                     <button id="orderDelete" type="button" class="btn btn-primary">Delete</button>
                     <button id="orderClear" type="reset" class="btn btn-primary">Clear</button>
@@ -180,28 +192,55 @@
 
             </div>
 
-            <div class="col-lg-6 ">
+            <div class="col-lg-4 ">
 
                 <div class="mb-3">
                     <label for="orderCusName" class="form-label">Customer Name</label>
                     <input type="text" class="form-control" id="orderCusName">
                 </div>
+
                 <div class="mb-3">
                     <label for="orderItemCode" class="form-label">Item Code</label>
                     <input type="text" class="form-control" id="orderItemCode">
+                </div>
+
+                <div class="mb-3">
+                    <label for="orderTotal" class="form-label">Total</label>
+                    <input type="text" class="form-control" id="orderTotal">
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 ">
+
+                <div class="mb-3">
+                    <label for="orderQtyOnHand" class="form-label">QTY On Hand</label>
+                    <input type="text" class="form-control" id="orderQtyOnHand">
+                </div>
+
+                <div class="mb-3">
+                    <label for="orderQty" class="form-label">QTY</label>
+                    <input type="text" class="form-control" id="orderQty">
+                </div>
+
+                <div class="mb-3">
+                    <label for="orderUnitPrice" class="form-label">Unit Price</label>
+                    <input type="text" class="form-control" id="orderUnitPrice">
                 </div>
 
             </div>
         </div>
     </div>
 
-    <table style="position: absolute; top: 350px" class="table">
+    <table style="position: absolute; top: 450px" class="table">
         <thead>
         <tr>
             <th scope="col">Order ID</th>
             <th scope="col">Date</th>
             <th scope="col">Cus Name</th>
             <th scope="col">Item Code</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
         </tr>
         </thead>
         <tbody id="orderTBody">
@@ -212,11 +251,10 @@
 </section>
 
 
-
-
 <script src="assets/lib/jquery-3.7.1.min.js"></script>
 <script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
