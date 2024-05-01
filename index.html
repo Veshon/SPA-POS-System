@@ -177,8 +177,8 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="orderDate" class="form-label">Date</label>
-                        <input type="text" class="form-control" id="orderDate">
+                        <label for="orderItemCode" class="form-label">Item Code</label>
+                        <input type="text" class="form-control" id="orderItemCode">
                     </div>
 
                     <div class="mb-3">
@@ -193,18 +193,18 @@
             <div class="col-lg-4 ">
 
                 <div class="mb-3">
+                    <label for="orderQtyOnHand" class="form-label">QTY On Hand</label>
+                    <input type="text" class="form-control" id="orderQtyOnHand">
+                </div>
+
+                <div class="mb-3">
+                    <label for="orderDate" class="form-label">Item Description</label>
+                    <input type="text" class="form-control" id="orderDate">
+                </div>
+
+                <div class="mb-3">
                     <label for="orderCusName" class="form-label">Customer Name</label>
                     <input type="text" class="form-control" id="orderCusName">
-                </div>
-
-                <div class="mb-3">
-                    <label for="orderItemCode" class="form-label">Item Code</label>
-                    <input type="text" class="form-control" id="orderItemCode">
-                </div>
-
-                <div class="mb-3">
-                    <label for="orderTotal" class="form-label">Total</label>
-                    <input type="text" class="form-control" id="orderTotal">
                 </div>
 
                 <button style="width: 106px; height: 50px" id="orderSave" type="button" class="btn btn-success">Add to cart</button>
@@ -217,8 +217,8 @@
             <div class="col-lg-4 ">
 
                 <div class="mb-3">
-                    <label for="orderQtyOnHand" class="form-label">QTY On Hand</label>
-                    <input type="text" class="form-control" id="orderQtyOnHand">
+                    <label for="orderUnitPrice" class="form-label">Unit Price</label>
+                    <input type="text" class="form-control" id="orderUnitPrice">
                 </div>
 
                 <div class="mb-3">
@@ -227,10 +227,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="orderUnitPrice" class="form-label">Unit Price</label>
-                    <input type="text" class="form-control" id="orderUnitPrice">
+                    <label for="orderTotal" class="form-label">Total</label>
+                    <input type="text" class="form-control" id="orderTotal">
                 </div>
-
 
             </div>
         </div>
@@ -239,11 +238,11 @@
     <table style="position: absolute; top: 450px" class="table">
         <thead>
         <tr>
-            <th scope="col">Order ID</th>
-            <th scope="col">Date</th>
-            <th scope="col">Cus Name</th>
             <th scope="col">Item Code</th>
             <th scope="col">Description</th>
+            <th scope="col">QTY On Hand</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Total</th>
             <th scope="col">Action</th>
         </tr>
         </thead>
