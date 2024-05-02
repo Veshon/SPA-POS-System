@@ -258,10 +258,12 @@
         orders.map((item, index)=>{
 
             var record = `<tr>
-                  <td class="orderId-value">${item.$id}</td>
-                  <td class="orderDate-value">${item.$date}</td>
-                  <td class="orderCusName-value">${item.$orderCusName}</td>
-                  <td class="orderItemName-value">${item.$orderItemCode}</td>
+                  <td class="itemCode-value">${item.$itemCode}</td>
+                  <td class="description-value">${item.$description}</td>
+                  <td class="qtyOnHand-value">${item.$cusName}</td>
+                  <td class="unitPrice-value">${item.$unitPrice}</td>
+                  <td class="total-value">${item.$total}</td>
+<!--                  <td class="action-value">${item.$orderItemCode}</td>-->
                 </tr>`;
 
             $("#orderTBody").append(record)
@@ -275,23 +277,43 @@
 
             var id = $('#orderId').val();
 
-            var date = $('#orderDate').val();
+            var itemCode = $('#orderItemCode').val();
+
+            var cusId = $('#orderCusId').val();
+
+            var qtyOnHand = $('#orderQtyOnHand').val();
+
+            var description = $('#orderDescription').val();
 
             var cusName = $('#orderCusName').val();
 
-            var itemCode = $('#orderItemCode').val();
+            var unitPrice = $('#orderUnitPrice').val();
+
+            var qty = $('#orderQty').val();
+
+            var total = $('#orderTotal').val();
 
             console.log(id);
-            console.log(date);
-            console.log(cusName);
-            console.log(itemCode)
+            console.log(itemCode);
+            console.log(cusId);
+            console.log(qtyOnHand)
+            console.log(description)
+            console.log(cusName)
+            console.log(unitPrice)
+            console.log(qty)
+            console.log(total)
 
             /*Pushing student data to an array through an object*/
             let orderValues={
                 $id: id,
-                $date: date,
-                $orderCusName: cusName,
-                $orderItemCode: itemCode
+                $itemCode: itemCode,
+                $cusId: cusId,
+                $qtyOnHand: qtyOnHand,
+                $description: description,
+                $cusName: cusName,
+                $unitPrice: unitPrice,
+                $qty: qty,
+                $total: total
             }
 
             orders.push(orderValues)
@@ -346,6 +368,7 @@
         $("#orderClear").click();
 
     })
+
 
     $("#orderDelete").on('click',() => {
 
