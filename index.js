@@ -223,15 +223,14 @@
 
         var price = $('#itemPrice').val();
 
-
         let itemObj = {...items[recordIndex]}
         itemObj.$id = id
         itemObj.$desc = desc
         itemObj.$qty = qty
         itemObj.$price = price
 
-        loadCustomers();
-        $("#cusReset").click();
+        loadAllItems();
+        $("#itemClear").click();
 
     })
 
