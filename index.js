@@ -328,20 +328,24 @@
         let index = $(this).index();
         records = index;
 
-        let id = $(this).find(".orderId-value").text();
-        let date = $(this).find(".orderDate-value").text();
-        let cusName = $(this).find(".orderCusName-value").text();
-        let itemCode = $(this).find(".orderItemName-value").text();
+        let itemCode = $(this).find(".itemCode-value").text();
+        let description = $(this).find(".description-value").text();
+        let qtyOnHand = $(this).find(".qtyOnHand-value").text();
+        let unitPrice = $(this).find(".unitPrice-value").text();
+        let total = $(this).find(".total-value").text();
 
-        console.log("Values:"+id)
-        console.log("Values:"+date)
-        console.log("Values:"+cusName)
+
         console.log("Values:"+itemCode)
+        console.log("Values:"+description)
+        console.log("Values:"+qtyOnHand)
+        console.log("Values:"+unitPrice)
+        console.log("Values:"+total)
 
-        $("#orderId").val(id);
-        $("#orderDate").val(date);
-        $("#orderCusName").val(cusName);
         $("#orderItemCode").val(itemCode);
+        $("#orderDescription").val(description);
+        $("#orderQtyOnHand").val(qtyOnHand);
+        $("#orderUnitPrice").val(unitPrice);
+        $("#orderTotal").val(total);
 
     })
 
