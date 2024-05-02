@@ -372,15 +372,16 @@
 
 
         let orderObj = {...orders[recordIndex]}
-        orderObj.$id = id
-        orderObj.$itemCode = itemCode
-        orderObj.$cusId = cusId
-        orderObj.$qtyOnHand = qtyOnHand
-        orderObj.$description = itemDescription
-        orderObj.$cusName = cusName
-        orderObj.$unitPrice = unitPrice
-        orderObj.$qty = qty
-        orderObj.$total = total
+
+             orderObj.$id = id
+             orderObj.$itemCode = itemCode
+             orderObj.$cusId = cusId
+             orderObj.$qtyOnHand = qtyOnHand
+             orderObj.$description = itemDescription
+             orderObj.$cusName = cusName
+             orderObj.$unitPrice = unitPrice
+             orderObj.$qty = qty
+             orderObj.$total = total
 
         loadAllOrders();
         $("#orderClear").click();
