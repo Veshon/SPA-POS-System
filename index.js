@@ -354,18 +354,33 @@
 
         var id = $('#orderId').val();
 
-        var date = $('#orderDate').val();
+        var itemCode = $('#orderItemCode').val();
+
+        var cusId = $('#orderCusId').val();
+
+        var qtyOnHand = $('#orderQtyOnHand').val();
+
+        var itemDescription = $('#orderItemDescription').val();
 
         var cusName = $('#orderCusName').val();
 
-        var itemCode = $('#orderItemCode').val();
+        var unitPrice = $('#orderUnitPrice').val();
+
+        var qty = $('#orderQty').val();
+
+        var total = $('#orderTotal').val();
 
 
         let orderObj = {...orders[recordIndex]}
         orderObj.$id = id
-        orderObj.$desc = desc
+        orderObj.$itemCode = itemCode
+        orderObj.$cusId = cusId
+        orderObj.$qtyOnHand = qtyOnHand
+        orderObj.$description = itemDescription
+        orderObj.$cusName = cusName
+        orderObj.$unitPrice = unitPrice
         orderObj.$qty = qty
-        orderObj.$price = price
+        orderObj.$total = total
 
         loadAllOrders();
         $("#orderClear").click();
