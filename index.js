@@ -260,10 +260,9 @@
             var record = `<tr>
                   <td class="itemCode-value">${item.$itemCode}</td>
                   <td class="description-value">${item.$description}</td>
-                  <td class="qtyOnHand-value">${item.$cusName}</td>
+                  <td class="qtyOnHand-value">${item.$qtyOnHand}</td>
                   <td class="unitPrice-value">${item.$unitPrice}</td>
                   <td class="total-value">${item.$total}</td>
-<!--                  <td class="action-value">${item.$orderItemCode}</td>-->
                 </tr>`;
 
             $("#orderTBody").append(record)
