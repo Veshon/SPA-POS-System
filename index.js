@@ -197,7 +197,6 @@
         console.log(qty);
         console.log(price)
 
-        /*Pushing student data to an array through an object*/
         let itemValues={
             $id: id,
             $desc: desc,
@@ -223,7 +222,7 @@
 
         var price = $('#itemPrice').val();
 
-        let itemObj = {...items[recordIndex]}
+        let itemObj = items[recordIndex];
         itemObj.$id = id
         itemObj.$desc = desc
         itemObj.$qty = qty

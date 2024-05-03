@@ -17,7 +17,7 @@ h1{
     max-width: 500px;
 }
 
-.dashMainBox>a>#cusBox{
+#cusBox{
     width: 230px;
     height: 230px;
     background-color: white;
@@ -30,7 +30,7 @@ h1{
     margin: auto;
 }
 
-.dashMainBox>a>#itemBox{
+#itemBox{
     width: 230px;
     height: 230px;
     background-color: white;
@@ -42,8 +42,7 @@ h1{
     left: 0;
     margin: auto;
 }
-
-.dashMainBox>a>#orderBox{
+#orderBox{
     width: 230px;
     height: 230px;
     background-color: white;
